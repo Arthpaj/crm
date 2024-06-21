@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91A06FAE-0D31-435A-96C1-CB4D1DED2181}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnvoiCommandeCRM</RootNamespace>
+    <AssemblyName>EnvoiCommandeCRM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Adinfo2010.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.4.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commun\Commun.cs" />
+    <Compile Include="Commun\Connection.cs" />
+    <Compile Include="Commun\GestErreur.cs" />
+    <Compile Include="Divers\UFInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Divers\UFInputBox.designer.cs">
+      <DependentUpon>UFInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Standard\UFStdData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Standard\UFStdData.Designer.cs">
+      <DependentUpon>UFStdData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Standard\UFStdDataComplexe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Standard\UFStdDataComplexe.Designer.cs">
+      <DependentUpon>UFStdDataComplexe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UFAjoutClientVP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UFAjoutClientVP.designer.cs">
+      <DependentUpon>UFAjoutClientVP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UFAjoutLogiciel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UFAjoutLogiciel.Designer.cs">
+      <DependentUpon>UFAjoutLogiciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Standard\UFStd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Standard\UFStd.designer.cs">
+      <DependentUpon>UFStd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UFAjoutContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UFAjoutContact.Designer.cs">
+      <DependentUpon>UFAjoutContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UFAjoutMateriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UFAjoutMateriel.Designer.cs">
+      <DependentUpon>UFAjoutMateriel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UFAjoutSociete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UFAjoutSociete.Designer.cs">
+      <DependentUpon>UFAjoutSociete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UFSaisie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UFSaisie.Designer.cs">
+      <DependentUpon>UFSaisie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Divers\UFInputBox.resx">
+      <DependentUpon>UFInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Standard\UFStd.resx">
+      <DependentUpon>UFStd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Standard\UFStdData.resx">
+      <DependentUpon>UFStdData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Standard\UFStdDataComplexe.resx">
+      <DependentUpon>UFStdDataComplexe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UFAjoutClientVP.resx">
+      <DependentUpon>UFAjoutClientVP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UFAjoutContact.resx">
+      <DependentUpon>UFAjoutContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UFAjoutLogiciel.resx">
+      <DependentUpon>UFAjoutLogiciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UFAjoutMateriel.resx">
+      <DependentUpon>UFAjoutMateriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UFAjoutSociete.resx">
+      <DependentUpon>UFAjoutSociete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UFSaisie.resx">
+      <DependentUpon>UFSaisie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\ajouter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\aperçu.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\aperçu2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\basVue.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Copier 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\delete_x_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\hautVue.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Modifier.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\new_document_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\new_document_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Plus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Plus42-42.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\précédent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\precedentVue.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\print_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\print_preview_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\quitter2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\quitter2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Sage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\suivant.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\suivant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\suivantVue.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\supprimer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\valide.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\CRM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Intranet.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Commande.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Commande2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Commande3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\degrade2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Adinfo2010.ico" />
+    <None Include="Ressources\undo_32.png" />
+    <None Include="Ressources\Param.png" />
+    <None Include="Ressources\preferences-system-3.png" />
+    <None Include="Ressources\trash_32.png" />
+    <None Include="Ressources\add_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

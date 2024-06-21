@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EnvoiCommandeCRM.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LienPlanning" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.99.247:82/vplanning/resourceimport.do?PLANNING=VP+GROUPE+ADINFO&amp;IMPORT=Commandes+de+l%27intranet</Value>
+    </Setting>
+    <Setting Name="LienPlanningClient" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.99.247:82/vplanning/resourceimport.do?PLANNING=VP+GROUPE+ADINFO&amp;IMPORT=C765-025B-00E1-0E1B-1C31-FC4F-9003-500B</Value>
+    </Setting>
+    <Setting Name="Cle_Token" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MACLESECRETE</Value>
+    </Setting>
+    <Setting Name="VPConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Provider=SQLNCLI11;Data Source=ARTHURPAJOT\SQLEXPRESS;Password=vpuser;User ID=vpuser;Initial Catalog="VP GROUPE ADINFO";MultipleActiveResultSets=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=SQLNCLI11;Data Source=ARTHURPAJOT\SQLEXPRESS;Password=vpuser;User ID=vpuser;Initial Catalog="VP GROUPE ADINFO";MultipleActiveResultSets=True</Value>
+    </Setting>
+    <Setting Name="URL_Aditiger" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://crm.groupeadinfo.org</Value>
+    </Setting>
+    <Setting Name="VpTranferConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Provider=SQLNCLI11;Data Source=ARTHURPAJOT\SQLEXPRESS;User ID=usertest;Password=password2,;Initial Catalog=TRANSFERT_VP_backup_2024_04_28_212502_2624838;Packet Size=4096;MARS Connection=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=SQLNCLI11;Data Source=ARTHURPAJOT\SQLEXPRESS;User ID=usertest;Password=password2,;Initial Catalog=TRANSFERT_VP_backup_2024_04_28_212502_2624838;Packet Size=4096;MARS Connection=True</Value>
+    </Setting>
+    <Setting Name="GrpDiffConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Provider=SQLNCLI11;Data Source=ARTHURPAJOT\SQLEXPRESS;User ID=usertest;Password=password2,;Initial Catalog=grpediffx5_backup_2024_04_28_213001_2305652;Packet Size=4096;MARS Connection=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=SQLNCLI11;Data Source=ARTHURPAJOT\SQLEXPRESS;User ID=usertest;Password=password2,;Initial Catalog=grpediffx5_backup_2024_04_28_213001_2305652;Packet Size=4096;MARS Connection=True</Value>
+    </Setting>
+    <Setting Name="MySQLConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">server=ARTHURPAJOT\SQLEXPRESS;user=usertest;database=crm_cperfor;port=1433;password=password2</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
